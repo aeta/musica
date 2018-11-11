@@ -1,19 +1,23 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Image</title>
-    
-    <script src="music.js"></script>
-</head>
-<body>
-    <form>
-        <input id="file_input" type="file" accept=".png">
-        <input id="process_button" type="button" value="Process" disabled>
-        <label id="no_file_selected" for="process_button">You need to select a file first.</label>
-    </form>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Image</title>
 
-    <script src="index.js"></script>
-</body>
+		<script src="music.js"></script>
+	</head>
+	<body>
+		<form>
+			<input id="file_input" type="file" accept=".png" />
+			<input id="process_button" type="button" value="Process" disabled />
+			<label id="no_file_selected" for="process_button"
+				>You need to select a file first.</label
+			>
+		</form>
+		<canvas id="myCanvas" width="1024" height="512"></canvas>
+
+		<script src="index.js"></script>
+		<script src="image.js"></script>
+	</body>
 </html>
