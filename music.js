@@ -7,7 +7,7 @@ var bleepAtFrequency = function(freq) {
 	o.frequency.value = freq
 	o.start(0)
 	o.connect(context.destination)
-	o.stop(context.currentTime + 0.1)
+	o.stop(context.currentTime + 0.05)
 }
 
 var play = function(r, g, b) {
@@ -19,5 +19,5 @@ var findAverage = function(r, g, b) {
 }
 
 var findFreq = function(value) {
-	return 200 * 2 ** (value / 127)
+	return 200 * 2 ** (value / 300)
 }
