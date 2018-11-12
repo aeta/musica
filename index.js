@@ -26,6 +26,10 @@ function setImage(data) {
     drawImageFromURL(data)
 }
 
+/**
+ * Run as await (e.g. `await sleep(25)`). Calling function recommended to be async (e.g. `async function foo()`)
+ * @param {number} ms 
+ */
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms))
 }

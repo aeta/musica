@@ -42,7 +42,3 @@ function drawImageFromURL(url) {
 		drawImage(this)
 	}
 }
-
-// drawImageFromURL(
-// 	'gradient.png'
-// )
